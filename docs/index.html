@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Calculadora probabilidad Oposiciones - UGT SP Extremadura
+        Enseñanza</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://extremadura.fespugt.es/images/IMAGEN/FOTOS/ENSENANZA/favicon.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="papel">
+            <img id="logo" src="https://extremadura.fespugt.es/images/IMAGEN/FOTOS/ENSENANZA/logo-ugtsp-invert.png"
+                alt="UGT SP Extremadura Enseñanza">
+            <p><span style="font-size:0.8em;">Oposiciones Docentes Extremadura</span></br><strong>Calculadora
+                    de probabilidad</strong></p>
+            <img id="imgpapel" src="https://extremadura.fespugt.es/images/IMAGEN/FOTOS/ENSENANZA/papel-rasgado.png">
+        </div>
+        <div id="papelprnt">
+            <img id="logo" src="https://extremadura.fespugt.es/images/IMAGEN/FOTOS/ENSENANZA/logo-fesp.png"
+                alt="FeSP-UGT Extremadura Enseñanza">
+            <p><span style="font-size:0.8em;">Oposiciones Docentes Extremadura</span></br><strong>Calculadora
+                    de probabilidad</strong></p>
+        </div>
+        <div id="calcubaremo">
+			<p style="text-align: center; font-weight:bold;">Puedes utilizar esta herramienta para calcular la probabilidad de que, en las próximas Oposiciones, te toque alguno de los temas que te has preparado.</p>
+			<div id="entradadatos">
+				<form onsubmit="return false;">
+					<p class="dato"><input class="intronum" id="total" maxlength="3" name="total" size="3" type="text" value="25"><span class="input-text">Número de temas:</span></p>
+					<p class="dato"><input class="intronum" id="bolas" maxlength="3" name="bolas" size="3" type="text" value="3"><span class="input-text">Bolas que se extraen del bombo:</span></p>
+					<p style="text-align: center;"><a class="calcular myButton">¡Calcula tus probabilidades!</a></p>
+					<p style="text-align: center;"><a class="sorteo myButton">Simula un sorteo</a></p>
+				</form>
+			</div>
+			<div id="contsorteo">
+				<h1>Resultado del sorteo:</h1>
+				<p class="listabolas"><span class="bola">4</span><span class="bola">25</span><span class="bola">10</span></p>
+			</div>
+			<div id="conttabla">
+				<h1>Tabla de Probabilidades:</h1>
+				<table class="tablaprob" border="0" align="center" width="300">
+					<thead>
+						<tr>
+							<th scope="col">Temas<br>preparados</th>
+							<th scope="col">Probabilidad<br>de acierto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>12.00 %</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>23.00 %</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>33.04 %</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>42.17 %</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>50.43 %</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>57.87 %</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>64.52 %</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>70.43 %</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>75.65 %</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>80.22 %</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>84.17 %</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>87.57 %</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>90.43 %</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>92.83 %</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>94.78 %</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>96.35 %</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>97.57 %</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>98.48 %</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>99.13 %</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>99.57 %</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>99.83 %</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>99.96 %</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>100.00 %</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>100.00 %</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>100.00 %</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="contcanvas">
+				<h1>Gráfico:</h1>
+				<canvas id="myChart" width="475" height="405" style="cursor: auto;"></canvas>
+			</div>
+		</div>
+</body>
+
+</html>
